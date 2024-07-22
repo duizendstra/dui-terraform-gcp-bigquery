@@ -1,0 +1,110 @@
+[
+    {
+        "mode": "NULLABLE",
+        "name": "timestamp_field",
+        "type": "TIMESTAMP"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "unique_id",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "first_name",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "last_name",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "email_address",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "birth_date",
+        "type": "STRING"
+    },
+    {
+        "fields": [
+            {
+                "mode": "NULLABLE",
+                "name": "street_name",
+                "type": "STRING"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "house_no",
+                "type": "STRING"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "zip_code",
+                "type": "STRING"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "city_name",
+                "type": "STRING"
+            }
+        ],
+        "mode": "NULLABLE",
+        "name": "address",
+        "type": "RECORD"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "is_active",
+        "type": "BOOLEAN"
+    },
+    {
+        "fields": [
+            {
+                "mode": "NULLABLE",
+                "name": "env_id",
+                "type": "STRING"
+            }
+        ],
+        "mode": "REPEATED",
+        "name": "environments",
+        "type": "RECORD"
+    },
+    {
+        "fields": [
+            {
+                "mode": "NULLABLE",
+                "name": "team_id",
+                "type": "STRING"
+            }
+        ],
+        "mode": "REPEATED",
+        "name": "teams",
+        "type": "RECORD"
+    },
+    {
+        "fields": [
+            {
+                "mode": "NULLABLE",
+                "name": "external_id",
+                "type": "STRING"
+            }
+        ],
+        "mode": "NULLABLE",
+        "name": "external_identifiers",
+        "type": "RECORD"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "created_timestamp",
+        "type": "TIMESTAMP"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "updated_timestamp",
+        "type": "TIMESTAMP"
+    }
+]
