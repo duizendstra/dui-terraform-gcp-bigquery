@@ -12,8 +12,15 @@ terraform {
 }
 
 module "bigquery" {
-  source     = "./.."
-  project_id = "dui-module-test-18e5"
+  source = "./.."
+  project = {
+    project_id = "your-project-id"
+    project_services = {
+      "bigquery.googleapis.com" = {
+        "disable_on_destroy" = false
+      }
+    }
+  }
   datasets = [{
     dataset_id    = "your_dataset_id"
     friendly_name = "your_friendly_name"
